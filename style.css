@@ -1,0 +1,272 @@
+@font-face {
+  src: url("fonts/Roboto/Roboto-Regular.ttf");
+  font-family: Roboto-Thin;
+}
+
+* {
+  font-family: Roboto-Thin;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.search-bar .search {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  float: left;
+  top: 28px;
+  left: 98px;
+  z-index: 2;
+}
+
+header {
+  width: 75%;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-top: 5px;
+  padding-left: 70px;
+}
+
+header input {
+  width: 100%;
+  height: 45px;
+  background-color: rgba(247, 246, 245, 1);
+  border-top-left-radius: 22.5px;
+  border-top-right-radius: 22.5px;
+  border-bottom-left-radius: 22.5px;
+  border-bottom-right-radius: 22.5px;
+  box-shadow: 2px 1px 5px rgba(0, 0, 0, 1);
+  padding-left: 20px;
+  text-indent: 20px;
+  outline: none;
+  border: 0px;
+  background-color: #fff;
+  -webkit-appearence: none;
+  -moz-appearence: none;
+  -ms-appearence: none;
+  -o-appearence: none;
+  appearence: none;
+}
+
+header input::-webkit-input-placeholder {
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 15px;
+}
+
+header button {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 2;
+  box-shadow: none;
+  border: 0;
+  margin: 0;
+  -webkit-appearence: none;
+  -moz-appearence: none;
+  -ms-appearence: none;
+  -o-appearence: none;
+  appearence: none;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(224, 223, 222, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.sidebar {
+  width: 295px;
+  height: 100%;
+  background-color: #b5b2b0;
+  z-index: 3;
+  position: absolute;
+  top: 0px;
+  left: -330px;
+  transition: all 200ms linear;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.sidebar ul {
+  position: absolute;
+  top: 170px;
+  left: 0;
+  padding-left: 0px;
+}
+
+.sidebar #options .active-page {
+  background-color: #858280;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 30px;
+  /* padding-left: 25px; */
+  /* position: relative;
+  top: 20px; */
+}
+
+.profile-bar {
+  width: 295px;
+  height: 165px;
+  background-color: #a5a09d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  border: 0;
+}
+
+.profile-bar svg {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 3;
+}
+
+.profile-bar p {
+  color: #000;
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  z-index: 3;
+}
+
+#options.a:active {
+  background-color: #4b4949;
+}
+
+#options li {
+  color: #3F3F41;
+  width: 295px;
+  height: 46px;
+  list-style: none;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  border-bottom: 2px solid rgba(165, 160, 157, 0.3);
+  float: left;
+  /* background-color: rgba(165, 160, 157, 0.3);
+  border-top-left-radius: 23px;
+  border-top-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+  border-bottom-right-radius: 23px; */
+}
+
+#options-icons {
+  width: 27px;
+  height: 20px;
+  z-index: 4;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+  top: -30px;
+  left: -25px;
+  float: right;
+  -webkit-appearence: none;
+  -moz-appearence: none;
+  -ms-appearence: none;
+  -o-appearence: none;
+  appearence: none;
+}
+
+#options-padding {
+  padding-left: 10px;
+}
+
+#sign-out {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  left: 5px;
+  top: 680px;
+}
+
+/* .atm-info-bar {
+  width: 100%;
+  height: 30%;
+  z-index: 2;
+  background-color: #A5A09D;
+  position: absolute;
+  top: 70vh;
+  left: 0;
+}
+
+.atm-info-bar-text {
+  padding-left: 5px;
+} */
